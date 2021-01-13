@@ -14,7 +14,7 @@ jobs:
         id: build_image
         uses: docker/build-push-action@v2
         with:
-          push: false
+          push: true
           tags: user/app:latest
       - name: Image digest
-        run: echo ${{ steps.build_image.outputs.digest }}
+        run: echo ${{steps.build_image.outputs.digest}}
