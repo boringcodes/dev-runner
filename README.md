@@ -1,31 +1,25 @@
 <div align="center">
-  <h1>repo-template</h1>
-  <p>Boring GitHub Repository Template</p>
+  <h1>docker-dev-runner</h1>
+  <p>Boring Docker Local Development Runner</p>
 
   <div>
-    <a href="https://github.com/boringcodes/repo-template/commits" aria-label="Commitizen Friendly">
+    <a href="https://github.com/boringcodes/docker-dev-runner/commits" aria-label="Commitizen Friendly">
       <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
     </a>
-    <a href="https://github.com/boringcodes/repo-template" aria-label="Prettier Code Style">
+    <a href="https://github.com/boringcodes/docker-dev-runner" aria-label="Prettier Code Style">
       <img src="https://img.shields.io/badge/code_style-prettier-brightgreen?style=flat-square">
     </a>
-    <a href="https://github.com/boringcodes/repo-template/actions" aria-label="Lint Status">
-      <img src="https://img.shields.io/github/workflow/status/boringcodes/repo-template/lint-source?style=flat-square&label=lint">
+    <a href="https://github.com/boringcodes/docker-dev-runner/actions" aria-label="Build Status">
+      <img src="https://img.shields.io/github/workflow/status/boringcodes/docker-dev-runner/build-image?style=flat-square">
     </a>
-    <a href="https://github.com/boringcodes/repo-template/actions" aria-label="Build Status">
-      <img src="https://img.shields.io/github/workflow/status/boringcodes/repo-template/build-source?style=flat-square">
+    <a href="https://hub.docker.com/repository/docker/boringcodes/docker-dev-runner" aria-label="Docker Image Version">
+      <img src="https://img.shields.io/docker/v/boringcodes/docker-dev-runner?color=brightgreen&style=flat-square">
     </a>
-    <a href="https://david-dm.org/boringcodes/repo-template" aria-label="Dependencies Status">
-      <img src="https://img.shields.io/david/boringcodes/repo-template?style=flat-square">
+    <a href="https://hub.docker.com/repository/docker/boringcodes/docker-dev-runner" aria-label="Docker Image Downloads">
+      <img src="https://img.shields.io/docker/pulls/boringcodes/docker-dev-runner?color=brightgreen&style=flat-square">
     </a>
-    <a href="https://www.npmjs.com/package/@boringcodes/repo-template" aria-label="NPM Version">
-      <img src="https://img.shields.io/npm/v/@boringcodes/repo-template?color=brightgreen&style=flat-square">
-    </a>
-    <a href="https://www.npmjs.com/package/@boringcodes/repo-template" aria-label="NPM Downloads">
-      <img src="https://img.shields.io/npm/dm/@boringcodes/repo-template?style=flat-square">
-    </a>
-    <a href="https://github.com/boringcodes/repo-template/blob/master/LICENSE" aria-label="MIT License">
-      <img src="https://img.shields.io/github/license/boringcodes/repo-template?color=brightgreen&style=flat-square">
+    <a href="https://github.com/boringcodes/docker-dev-runner/blob/master/LICENSE" aria-label="MIT License">
+      <img src="https://img.shields.io/github/license/boringcodes/docker-dev-runner?color=brightgreen&style=flat-square">
     </a>
     <a href="https://github.com/boringcodes" aria-label="BoringCodes Verified">
       <img src="https://img.shields.io/badge/boringcodes-verified-brightgreen?style=flat-square">
@@ -33,20 +27,16 @@
   </div>
 </div>
 
-## Installation
-
-Use the package manager to install foobar
+## Development
 
 ```bash
-yarn add foobar
+  docker build -t boringcodes/docker-dev-runner:latest .
 ```
 
 ## Usage
 
-```javascript
-import foobar from 'foobar';
-
-foobar();
+```bash
+  docker run --rm -d -v $PWD:/app -e HOST=localhost -e PORT=80 boringcodes/docker-dev-runner:latest
 ```
 
 ## Contributing
@@ -61,4 +51,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://github.com/boringcodes/repo-template/blob/master/LICENSE)
+[MIT](https://github.com/boringcodes/docker-dev-runner/blob/master/LICENSE)
