@@ -12,10 +12,10 @@
     <a href="https://github.com/boringcodes/docker-dev-runner/actions" aria-label="Build Status">
       <img src="https://img.shields.io/github/workflow/status/boringcodes/docker-dev-runner/build-image?style=flat-square">
     </a>
-    <a href="https://hub.docker.com/repository/docker/boringcodes/docker-dev-runner" aria-label="Docker Image Version">
+    <a href="https://hub.docker.com/r/boringcodes/docker-dev-runner" aria-label="Docker Image Version">
       <img src="https://img.shields.io/docker/v/boringcodes/docker-dev-runner?color=brightgreen&style=flat-square">
     </a>
-    <a href="https://hub.docker.com/repository/docker/boringcodes/docker-dev-runner" aria-label="Docker Image Downloads">
+    <a href="https://hub.docker.com/r/boringcodes/docker-dev-runner" aria-label="Docker Image Downloads">
       <img src="https://img.shields.io/docker/pulls/boringcodes/docker-dev-runner?color=brightgreen&style=flat-square">
     </a>
     <a href="https://github.com/boringcodes/docker-dev-runner/blob/master/LICENSE" aria-label="MIT License">
