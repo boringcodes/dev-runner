@@ -19,4 +19,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: ${{GITHUB_REPOSITORY}}:latest
+          tags: boringcodes/docker-dev-runner:latest
