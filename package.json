@@ -2,7 +2,7 @@
   "name": "docker-dev-runner",
   "description": "Boring Docker Local Development Runner",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/boringcodes/docker-dev-runner",
   "bugs": "https://github.com/boringcodes/docker-dev-runner/issues",
   "license": "MIT",
