@@ -6,9 +6,6 @@
     <a href="https://github.com/boringcodes/docker-dev-runner/commits" aria-label="Commitizen Friendly">
       <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
     </a>
-    <a href="https://github.com/boringcodes/docker-dev-runner" aria-label="Prettier Code Style">
-      <img src="https://img.shields.io/badge/code_style-prettier-brightgreen?style=flat-square">
-    </a>
     <a href="https://github.com/boringcodes/docker-dev-runner/actions" aria-label="Build Status">
       <img src="https://img.shields.io/github/workflow/status/boringcodes/docker-dev-runner/build-image?style=flat-square">
     </a>
