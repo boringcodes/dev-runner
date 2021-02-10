@@ -9,13 +9,14 @@
   "author": "BoringCodes <hi@boringcodes.com> (https://boringcodes.com)",
   "repository": "https://github.com/boringcodes/docker-dev-runner.git",
   "scripts": {
-    "purge": "rm -rf node_modules",
+    "purge": "rimraf node_modules",
     "release": "standard-version",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",
     "release:patch": "yarn release --release-as patch"
   },
   "devDependencies": {
+    "rimraf": "^3.0.2",
     "standard-version": "^9.1.0"
   }
 }
