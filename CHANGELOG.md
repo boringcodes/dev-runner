@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/boringcodes/dev-runner/compare/v1.0.0...v1.0.1) (2021-02-11)
+
+
+### Bug Fixes
+
+* **workflows/push-dockerhub.yml:** missing with.images in Docker meta step ([1994342](https://github.com/boringcodes/dev-runner/commit/19943423388574afd942aa8d79fa6f03b5f0644a))
+
 ## [1.0.0](https://github.com/boringcodes/dev-runner/compare/v0.2.0...v1.0.0) (2021-02-11)
 
 
