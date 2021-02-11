@@ -13,20 +13,20 @@ jobs:
       - name: Build image (node:10-alpine)
         uses: docker/build-push-action@v2
         with:
-          context: ./node/10
+          file: ./node/10/Dockerfile
           push: false
       - name: Build image (node:12-alpine)
         uses: docker/build-push-action@v2
         with:
-          context: ./node/12
+          file: ./node/12/Dockerfile
           push: false
       - name: Build image (node:14-alpine)
         uses: docker/build-push-action@v2
         with:
-          context: ./node/14
+          file: ./node/14/Dockerfile
           push: false
       - name: Build image (node:15-alpine)
         uses: docker/build-push-action@v2
         with:
-          context: ./node/15
+          file: ./node/15/Dockerfile
           push: false
