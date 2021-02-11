@@ -1,13 +1,13 @@
 {
-  "name": "docker-dev-runner",
+  "name": "dev-runner",
   "description": "Boring Docker Local Development Runner",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://github.com/boringcodes/docker-dev-runner",
-  "bugs": "https://github.com/boringcodes/docker-dev-runner/issues",
+  "homepage": "https://github.com/boringcodes/dev-runner",
+  "bugs": "https://github.com/boringcodes/dev-runner/issues",
   "license": "MIT",
   "author": "BoringCodes <hi@boringcodes.com> (https://boringcodes.com)",
-  "repository": "https://github.com/boringcodes/docker-dev-runner.git",
+  "repository": "https://github.com/boringcodes/dev-runner.git",
   "scripts": {
     "purge": "rimraf node_modules",
     "release": "standard-version",
