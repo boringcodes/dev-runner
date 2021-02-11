@@ -27,13 +27,13 @@
 ## Development
 
 ```bash
-  docker build -t boringcodes/dev-runner:latest .
+  docker build -t boringcodes/dev-runner:node-15-alpine .
 ```
 
 ## Usage
 
 ```bash
-  docker run --rm -d -v $PWD:/app -e HOST=localhost -e PORT=80 boringcodes/dev-runner:latest
+  docker run --rm -d -v $PWD:/app -e HOST=localhost -e PORT=80 boringcodes/dev-runner:node-15-alpine
 ```
 
 ## Contributing

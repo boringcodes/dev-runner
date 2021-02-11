@@ -1,11 +1,8 @@
-FROM node:12-alpine
+FROM node:15-alpine
 
 RUN apk add --no-cache curl
 
 WORKDIR /app
-
-# mount source to WORKDIR on docker run
-# -v ./:/app
 
 CMD yarn dev
 

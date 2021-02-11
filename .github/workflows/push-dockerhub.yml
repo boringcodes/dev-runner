@@ -12,8 +12,6 @@ jobs:
       - name: Docker meta
         id: docker_meta
         uses: crazy-max/ghaction-docker-meta@v1
-        with:
-          images: boringcodes/dev-runner
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
@@ -23,12 +21,35 @@ jobs:
         with:
           username: ${{secrets.DOCKERHUB_USERNAME}}
           password: ${{secrets.DOCKERHUB_TOKEN}}
-      - name: Build & Push image to DockerHub
-        id: build_push_image
+      - name: Build & Push image to DockerHub (node:10-alpine)
         uses: docker/build-push-action@v2
         with:
+          context: ./node/10
+          file: ./node/10/Dockerfile
           push: true
-          tags: ${{steps.docker_meta.outputs.tags}}
+          tags: boringcodes/dev-runner:node-10-alpine
           labels: ${{steps.docker_meta.outputs.labels}}
-      - name: Image digest
-        run: echo ${{steps.build_push_image.outputs.digest}}
+      - name: Build & Push image to DockerHub (node:12-alpine)
+        uses: docker/build-push-action@v2
+        with:
+          context: ./node/12
+          file: ./node/12/Dockerfile
+          push: true
+          tags: boringcodes/dev-runner:node-12-alpine
+          labels: ${{steps.docker_meta.outputs.labels}}
+      - name: Build & Push image to DockerHub (node:14-alpine)
+        uses: docker/build-push-action@v2
+        with:
+          context: ./node/14
+          file: ./node/14/Dockerfile
+          push: true
+          tags: boringcodes/dev-runner:node-14-alpine
+          labels: ${{steps.docker_meta.outputs.labels}}
+      - name: Build & Push image to DockerHub (node:15-alpine)
+        uses: docker/build-push-action@v2
+        with:
+          context: ./node/15
+          file: ./node/15/Dockerfile
+          push: true
+          tags: boringcodes/dev-runner:node-15-alpine
+          labels: ${{steps.docker_meta.outputs.labels}}
