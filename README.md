@@ -26,7 +26,7 @@
 
 ## Features
 
-- [x] node:10-alpine, 12-alpine, 14-alpine, 15-alpine
+- [x] node:10-alpine, :12-alpine, :14-alpine & :15-alpine
 - [x] healthcheck (curl http://${HOST}:${PORT}/health)
 
 ## Development
