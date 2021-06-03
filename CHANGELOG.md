@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/boringcodes/dev-runner/compare/v1.0.1...v1.1.0) (2021-06-03)
+
+
+### Features
+
+* **node:** support node:16-alpine, lts & current tags ([61e88a9](https://github.com/boringcodes/dev-runner/commit/61e88a97f0cfd3d7e845e036df31ec7b20bd8ccb))
+
 ### [1.0.1](https://github.com/boringcodes/dev-runner/compare/v1.0.0...v1.0.1) (2021-02-11)
 
 
