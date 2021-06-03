@@ -23,31 +23,47 @@ jobs:
         with:
           username: ${{secrets.DOCKERHUB_USERNAME}}
           password: ${{secrets.DOCKERHUB_TOKEN}}
-      - name: Build & Push image to DockerHub (node:10-alpine)
+      # node 10
+      - name: Build Push image to DockerHub (node:10-alpine)
         uses: docker/build-push-action@v2
         with:
           file: ./node/10/Dockerfile
           push: true
           tags: boringcodes/dev-runner:node-10-alpine
           labels: ${{steps.docker_meta.outputs.labels}}
-      - name: Build & Push image to DockerHub (node:12-alpine)
+      # node 12
+      - name: Build Push image to DockerHub (node:12-alpine)
         uses: docker/build-push-action@v2
         with:
           file: ./node/12/Dockerfile
           push: true
           tags: boringcodes/dev-runner:node-12-alpine
           labels: ${{steps.docker_meta.outputs.labels}}
-      - name: Build & Push image to DockerHub (node:14-alpine)
+      # node 14
+      - name: Build Push image to DockerHub (node:14-alpine)
         uses: docker/build-push-action@v2
         with:
           file: ./node/14/Dockerfile
           push: true
-          tags: boringcodes/dev-runner:node-14-alpine
+          tags: |
+            boringcodes/dev-runner:node-14-alpine
+            boringcodes/dev-runner:node-lts-alpine
           labels: ${{steps.docker_meta.outputs.labels}}
-      - name: Build & Push image to DockerHub (node:15-alpine)
+      # node 15
+      - name: Build Push image to DockerHub (node:15-alpine)
         uses: docker/build-push-action@v2
         with:
           file: ./node/15/Dockerfile
           push: true
           tags: boringcodes/dev-runner:node-15-alpine
+          labels: ${{steps.docker_meta.outputs.labels}}
+      # node 16
+      - name: Build Push image to DockerHub (node:16-alpine)
+        uses: docker/build-push-action@v2
+        with:
+          file: ./node/16/Dockerfile
+          push: true
+          tags: |
+            boringcodes/dev-runner:node-16-alpine
+            boringcodes/dev-runner:node-current-alpine
           labels: ${{steps.docker_meta.outputs.labels}}
