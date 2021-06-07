@@ -13,10 +13,20 @@
     "release": "standard-version",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",
-    "release:patch": "yarn release --release-as patch"
+    "release:patch": "yarn release --release-as patch",
+    "husky": "husky",
+    "commitlint": "commitlint"
   },
   "devDependencies": {
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "husky": "6.0.0",
     "rimraf": "3.0.2",
     "standard-version": "9.3.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
