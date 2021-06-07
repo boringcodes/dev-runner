@@ -16,7 +16,7 @@
     "release:patch": "yarn release --release-as patch"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
-    "standard-version": "^9.1.0"
+    "rimraf": "3.0.2",
+    "standard-version": "9.3.0"
   }
 }
